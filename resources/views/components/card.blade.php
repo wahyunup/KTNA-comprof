@@ -8,7 +8,7 @@
     <div class="relative p-4 sm:p-6 lg:p-8">
       <p class="text-sm font-medium uppercase tracking-widest text-pink-500">{{$nama}}</p>
   
-      <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
+      <p class="text-xl font-bold text-white sm:text-2xl">Aglaonema</p>
   
       <div class="mt-32 sm:mt-48 lg:mt-64">
         <div

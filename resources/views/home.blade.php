@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <h1>test</h1>
+    <x-raihan></x-raihan>
 
 @endsection
