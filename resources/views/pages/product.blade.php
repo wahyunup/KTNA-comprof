@@ -1,4 +1,4 @@
 @extends('main')
 @section('content')
-<x-products></x-products>
+<x-products :datas="$products"/>
 @endsection
