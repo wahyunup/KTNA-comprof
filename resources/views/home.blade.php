@@ -2,6 +2,7 @@
 
 @section('content')
 
-    <h1>test</h1>
+    <x-gallery></x-gallery>
+    <x-banner></x-banner>
 
 @endsection
