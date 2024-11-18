@@ -13,3 +13,6 @@ Route::get('/product', function () {
 Route::fallback(function () {
     return response()->view('errors404', [], 404);
 });
+
+Route::view('/gallery', 'gallery')->name('gallery');
+

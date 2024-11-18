@@ -2,6 +2,7 @@
 
 @section('content')
 
-    <x-raihan></x-raihan>
+    <x-gallery></x-gallery>
+    <x-banner></x-banner>
 
 @endsection

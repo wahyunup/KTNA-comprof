@@ -6,7 +6,7 @@
         <span class="border-[1px] border-[#64B100] h-[19px]"></span>
         <a href="/product">Produk</a>
         <span class="border-[1px] border-[#64B100] h-[19px]"></span>
-        <a href="/galeri">Galeri</a>
+        <a href="{{ route('gallery') }}">Galeri</a>
         <span class="border-[1px] border-[#64B100] h-[19px]"></span>
         <a href="/keanggotaan">Keanggotaan</a>
     </div>
