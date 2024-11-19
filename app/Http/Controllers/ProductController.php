@@ -10,12 +10,7 @@ class ProductController extends Controller
 {
 
     //test demo product pake tinker
-    // App\Models\Product::create([    
-    //  'productName' => 'Philodendrun golden finger',    
-    //  'category' => 'tanaman',    
-    //  'price' => 350000,    
-    //  'stock' => 50000,    
-    //  'description' => 'Philodendrun golden finger adalah tanaman...']);
+    // App\Models\Product::create(['productName'=>'Tanaman 4', 'category'=>'tanaman', 'price'=> 500000, 'stock'=>19, 'description'=>'ini adalah tanaman 4']);
     
     public function showProducts() {
 
