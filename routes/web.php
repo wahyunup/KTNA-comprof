@@ -14,3 +14,5 @@ Route::get('/productdetail/{id}', [ProductController::class, 'showProductdetails
 Route::fallback(function () {
     return response()->view('pages.errors404', [], 404);
 });
+
+Route::view('/gallery', 'gallery')->name('gallery');
