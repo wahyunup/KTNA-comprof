@@ -20,8 +20,7 @@ class ProductController extends Controller
     }
 
     public function showProductdetails($id) {
-        $product = Product::findOrFail($id);
-        $url = route('products.show', ['id' => $product->id]);  
+        $product = Product::find($id);
     return view('pages.productDetail', compact('product'));
     }
 }

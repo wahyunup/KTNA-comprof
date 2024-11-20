@@ -12,8 +12,8 @@
         </div>
         <div class="flex justify-between items-center w-full">
             <h2 class="text-[17px] font-bold text-[#6CBE02]">Rp.{{$datas['price']}}</h2>
-            <div class="{{$datas['stock'] > 20 ? 'bg-[#dfffb6]' : 'bg-[#ffcaca]'}} rounded-xl px-[13px] py-[5px]">
-                <p class="{{$datas['stock'] > 20 ? 'text-[#8cd32e]' : 'text-[#ff8484]' }} font-semibold text-[11px]">{{$datas['stock']}} Stok</p>
+            <div class="{{$datas['stock'] >= 20 ? 'bg-[#dfffb6]' : 'bg-[#ffcaca]'}} rounded-xl px-[13px] py-[5px]">
+                <p class="{{$datas['stock'] >= 20 ? 'text-[#8cd32e]' : 'text-[#ff8484]' }} font-semibold text-[11px]">{{$datas['stock']}} Stok</p>
             </div>
         </div>
     </div>  

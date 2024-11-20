@@ -2,8 +2,9 @@
 
 @section('content')
 
-<x-productdetail :datas = "$product"/>
+<x-productdetails :datas = "$product"/>
 @endsection
+@dump($product)
 
 
 
