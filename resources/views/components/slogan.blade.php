@@ -1,4 +1,4 @@
-<div class="bg-[#282828] p-[28px] h-[137px] items-center"> 
-    <p class="text-white text-center text-[35px] font-poppins italic"> 
+<div class="bg-[#282828] h-[137px] flex justify-center items-center"> 
+    <p data-aos="fade-right" data-aos-duration="1000" class="text-white  text-[35px] font-poppins italic"> 
         KTNA kuat PETANI Hebat TANGSEL Melesat </p>
 </div>

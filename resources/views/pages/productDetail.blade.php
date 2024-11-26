@@ -1,11 +1,7 @@
 @extends('main')
 
 @section('content')
-
-<x-productdetails :datas = "$product"/>
+  
+        <x-productdetail :datas="$product" />
+  
 @endsection
-@dump($product)
-
-
-
-

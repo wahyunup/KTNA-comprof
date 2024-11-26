@@ -1,13 +1,15 @@
-<div class="relative" >
-    <img src="{{ asset('images/banner.png') }}" alt="" class="w-full h-auto">
-    <div class="absolute inset-0 flex items-center justify-center text-center flex-col px-8 ">
-        <p class="text-white text-[44px] font-poppins">
-            Inginkan hasil kebun melimpah berkualitas?
-            <br>Kami hadir untuk mewujudkannya!
-        </p>
+<div class="relative h-[400px]" >
+    <img src="{{ asset('images/banner.png') }}" alt="" class="h-full w-full  object-fill">
+    <div class="absolute inset-0 flex justify-center items-center h-full">
+        <div class="flex items-center justify-center text-center flex-col gap-6">
+            <p data-aos="fade-up" data-aos-duration="1000" class="text-white sm:text-[10px] lg:text-[44px] font-poppins ">
+                Inginkan hasil kebun melimpah berkualitas?
+                <br>Kami hadir untuk mewujudkannya!
+            </p>
 
-        <a href="#" class="border hover:bg-green-600 text-white font-semibold py-2 px-4 rounded mt-4">
-            CONTACT US
-        </a>
+            <a data-aos="fade-up" data-aos-duration="1000" href="https://wa.me/6285695671162" class="border hover:bg-white hover:text-[#6CBE02] text-white text-[19px] py-2 px-4 ">
+                CONTACT US
+            </a>
+        </div>
     </div>
 </div>
