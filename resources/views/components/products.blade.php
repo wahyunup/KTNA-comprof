@@ -1,5 +1,7 @@
-<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 py-[157px] px-[130px] z-40 ">
+<div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-3 flex-wrap py-[157px] px-[157px]">
 @foreach ($datas as $data)
-<x-card :datas="$data"/>
+<div class="flex">
+    <x-card :datas="$data"/>
+</div>
 @endforeach
 </div>  

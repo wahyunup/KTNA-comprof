@@ -1,5 +1,5 @@
 @props(['datas'])
-<a href="{{route('products.show', ['id' => $datas->id])}}" class="group h-[450px] w-[394px] relative overflow-hidden">
+<a href="{{ route('products.show', ['slug' => $datas->slug]) }}" class="group h-[450px] w-[394px] relative overflow-hidden">
     <div class="w-full h-full group-hover:scale-[1.1] transition-all duration-300 ease-in-out">
         <img class="object-cover w-full h-full" src="https://www.orchid-florist.com/uploads/blog-thumbnail/4abeb627e90b3197345fb2e0f865f982c9ccf965.jpg" alt="">
     </div>
