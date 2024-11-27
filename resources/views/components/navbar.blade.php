@@ -11,6 +11,6 @@
             <span class="border-[1px] border-[#64B100] h-[19px]"></span>
             <a href="/keanggotaan">Keanggotaan</a>
         </div>
-        <a class="px-8 py-3 bg-[#8DBA23] rounded-md" href="/admin">Login</a>
+        <a class="px-8 py-3 bg-[#8DBA23] rounded-md" href="/admin">Upload</a>
     </div>
 </nav>
