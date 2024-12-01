@@ -29,6 +29,15 @@ return [
     */
 
     'disks' => [
+        'cloudinary' => [
+            'driver' => 'cloudinary',
+            'cloud_name' => env('CLOUDINARY_CLOUD_NAME'),
+            'api_key' => env('CLOUDINARY_API_KEY'),
+
+            // 'url' => env('ORIGINAL_URL') . '/ktna_images',
+            'url' => env('CLOUDINARY_URL'),
+            'api_secret' => env('CLOUDINARY_API_SECRET'),
+        ],
 
         'local' => [
             'driver' => 'local',

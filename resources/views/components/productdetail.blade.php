@@ -1,7 +1,7 @@
 @props(['datas'])
 <div class="flex py-[157px] px-[130px] gap-[64px] justify-center">
    <div class="w-[500px] h-[600px] overflow-hidden ">
-        <img class="object-cover w-full h-full hover:scale-[1.1] transition-all duration-300 ease-in-out" src="https://www.orchid-florist.com/uploads/blog-thumbnail/4abeb627e90b3197345fb2e0f865f982c9ccf965.jpg" alt="">
+        <img class="object-cover w-full h-full hover:scale-[1.1] transition-all duration-300 ease-in-out" src="{{$datas->image_url}}" alt="">
     </div>
     <div>
          <h1 class="font-semibold text-[47px]"></h1>

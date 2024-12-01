@@ -10,9 +10,9 @@ Route::get('/', function () {
 
 Route::get('/product', [ProductController::class, 'showProducts'])->name('products');
 
-Route::get('/admin', [CloudinaryController::class, 'index']);
+// Route::get('/admin', [CloudinaryController::class, 'index']);
 
-Route::post('/admin', [CloudinaryController::class, 'upload'])->name('upload');
+// Route::post('/admin', [CloudinaryController::class, 'upload'])->name('upload');
 
 Route::get('/productdetail/{slug}', [ProductController::class, 'showProductdetails'])->name('products.show');
 

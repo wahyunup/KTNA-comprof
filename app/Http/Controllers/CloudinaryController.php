@@ -13,27 +13,34 @@ class CloudinaryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-       return view('pages.admin.dashboard');
-    }
+//     public function index()
+//     {
+//        return view('pages');
+//     }
 
-    public function upload(Request $request)
-{
-    $path = 'ktna_images';
+//     public function upload(Request $request){
+//     $path = 'ktna_images';
 
-    $file = $request->file('image')->getClientOriginalName();
-    $fileName = pathinfo($file, PATHINFO_FILENAME);
+//     $file = $request->file('image')->getClientOriginalName();
+//     $fileName = pathinfo($file, PATHINFO_FILENAME);
 
-    $publicId = date('y-m-d_His') . '_' . $fileName;
+//     $publicId = date('y-m-d_His') . '_' . $fileName;
 
-    $upload = Cloudinary::upload($request->file('image')->getRealPath(), [
-        "public_id" => $publicId,
-        "folder" => $path,
-    ])->getSecurePath();
+//     $upload = Cloudinary::upload($request->file('image')->getRealPath(), [
+//         "public_id" => $publicId,
+//         "folder" => $path,
+//     ]);
 
-    return view('pages.admin.dashboard', compact('upload'));
-}
+//     $publicIdPath = $upload->getPublicId();
+//     $cloudName = "dage2ethb";
+//     $originalUrl = "https://res.cloudinary.com/{$cloudName}/image/upload/{$publicIdPath}";
+//     $image = new Product();
+//     $image->image_url = $originalUrl;
+//     $image->save();    
+//     dd($originalUrl);
+
+//     return view('pages.test.dashboard', compact('upload'));
+// }
 
 
     /**
