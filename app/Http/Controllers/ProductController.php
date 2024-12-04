@@ -9,14 +9,15 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
 
-    //test demo product pake tinker
-    // App\Models\Product::create(['productName'=>'Tanaman 4', 'category'=>'tanaman', 'price'=> 500000, 'stock'=>19, 'description'=>'ini adalah tanaman 4']);
     
-    public function showProducts() {
+    public function showProducts(Request $request) {
+        $category = $request->query('category');
 
-        $products = Product::all();
+        $category ? $products = Product::where('category', $category)->get() : $products = Product::all();
+    
+        $categories = Product::select('category')->distinct()->pluck('category');
 
-    return view('pages.product', compact('products'));
+    return view('pages.product', compact('products','categories'));
     }
 
     public function showProductdetails($slug) {

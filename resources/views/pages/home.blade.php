@@ -4,4 +4,5 @@
     <x-slogan/>
     <x-gallery/>
     <x-banner/>
+    <x-slide/>
 @endsection

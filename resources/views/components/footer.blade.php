@@ -2,10 +2,13 @@
     <div class="w-screen">
         <div class="bg-[#272727] flex justify-center py-[30px]">
         <div class="flex text-white gap-[10px]">
-            <a href="">ig</a>
-            <a href="">ig</a>
-            <a href="">ig</a>
-            <a href="">ig</a>
+            <a href="" class="w-[49.95px] h-[49.95px] bg-[#414141] flex items-center justify-center rounded-full">
+                <img src="{{asset('images/tiktok.png')}}" alt="">
+            </a>
+            
+            <a href="" class="w-[49.95px] h-[49.95px] bg-[#414141] flex items-center justify-center rounded-full"><img src="{{asset('images/facebook.png')}}" alt=""></a>
+            <a href="" class="w-[49.95px] h-[49.95px] bg-[#414141] flex items-center justify-center rounded-full"><img src="{{asset('images/x.png')}}" alt=""></a>
+            <a href="" class="w-[49.95px] h-[49.95px] bg-[#414141] flex items-center justify-center rounded-full"><img src="{{asset('images/instagram.png')}}" alt=""></a>
         </div>
     </div>
     

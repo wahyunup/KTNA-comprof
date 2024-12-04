@@ -5,7 +5,8 @@
             <div  class="bg-[white] w-[1px] h-[136px]"></div>
         <p  class="text-white text-[45px] font-poppins font-semibold italic"> 
             Ciptakan Lingkungan 
-            <br>Hijau Bersama Kami </p> </div>
+            <br>Hijau Bersama Kami
+        </p>
+        </div>
     </div>
-
 </div>
