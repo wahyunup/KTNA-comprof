@@ -1,4 +1,6 @@
 @extends('main')
 @section('content')
-<x-products :datas="$products"/>
+<div class="h-[2000px]">
+    <x-products :datas="$products" :categories="$categories"/>
+</div>
 @endsection

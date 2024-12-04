@@ -20,7 +20,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Support\Facades\Storage;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
-use Illuminate\Http\Request;
 
 class ProductResource extends Resource
 {
@@ -32,7 +31,32 @@ class ProductResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('productName'),
+                TextInput::make('productName')
+                ->required(),
+
+                TextInput::make('slug')
+                ->label('Sub product name')
+                ->required(),
+
+                Select::make('category')
+                    ->options([
+                        'Tanaman' => 'Tanaman',
+                        'Makanan' => 'Makanan',
+                    ])
+                ->required(),
+
+                
+                TextInput::make('price')
+                ->numeric()
+                ->required(),
+
+                TextInput::make('stock')
+                ->numeric()
+                ->required(),
+
+                Textarea::make('description')
+                ->required(),
+
                 FileUpload::make('image_url')
                     ->disk('cloudinary')
                     ->label('Upload Image')
@@ -51,16 +75,8 @@ class ProductResource extends Resource
                         return $url;
                     })
                     ->required(),
-                Select::make('category')
-                ->options([
-                    'Tanaman' => 'Tanaman',
-                    'reviewing' => 'Reviewing',
-                    'published' => 'Published',
-                ]),
-                TextInput::make('slug'),
-                TextInput::make('price'),
-                TextInput::make('stock'),
-                Textarea::make('description')
+                
+
             ]);
         }
         
@@ -70,7 +86,8 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('productName'),
-                TextColumn::make('slug'),
+                TextColumn::make('slug')
+                ->label('Sub product name'),
                 TextColumn::make('price'),
                 TextColumn::make('stock'),
                 ImageColumn::make('image_url'),
