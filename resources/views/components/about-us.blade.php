@@ -14,7 +14,7 @@
             <img class="w-[300px] h-[250px]" src="{{ asset('images/pertanian-3.png') }}" alt="">
         <div class="flex flex-col gap-3">   
             <h1>Pertanian</h1>
-            <p>Kelompok tani di Tangsel memproduksi beras berkualitas, sayuran segar seperti cabai, tomat, dan kangkung, serta buah-buahan seperti mangga, jambu biji, dan pisang untuk pasar lokal dan regional.</p>
+            <p>Kelompok tani di Tangsel memproduksi beras berkualitas, sayuran  seperti cabai, tomat, dan kangkung, serta buah-buahan seperti mangga, jambu biji, dan pisang untuk pasar lokal dan regional.</p>
         </div>
         </div>
 
