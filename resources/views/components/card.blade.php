@@ -1,7 +1,7 @@
 @props(['datas'])
-<a href="{{ route('products.show', ['slug' => $datas->slug]) }}" class="group h-[450px] w-[394px] relative overflow-hidden">
+<a href="{{ route('products.show', ['slug' => $datas->slug]) }}" class="group w-[360px] h-[270px] lg:h-[450px] lg:w-[394px] relative overflow-hidden">
     <div class="w-full h-full group-hover:scale-[1.1] transition-all duration-300 ease-in-out">
-        <img class="object-cover w-full h-full" src="{{$datas->image_url}}" alt="">
+        <img class="object-cover h-full w-full" src="{{$datas->image_url}}" alt="">
     </div>
     <div class="bg-white absolute group-hover:-translate-y-[100%] w-full flex flex-col gap-1 justify-between py-4 items-end px-5 transition-all duration-300 ease-in-out">
         <div class='w-full'>
