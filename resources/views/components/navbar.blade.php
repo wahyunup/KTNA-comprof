@@ -1,4 +1,4 @@
-<nav class="w-full flex justify-center z-[2] sticky top-0 bg-[#6CBE02] lg:bg-transparent py-5 lg:py-0">
+<nav class="w-full flex px-4 lg:justify-center sticky top-0  z-[2] lg:sticky lg:top-0 bg-[#6CBE02] lg:bg-transparent py-5 lg:py-0">
 
     <div class="hidden text-white absolute lg:flex items-center gap-5">
         <div class="flex gap-[53px] bg-[#6CBE02] px-[36px] py-[27px] items-center">
@@ -14,10 +14,8 @@
         </div>
     </div>
 
-    <button id="menu-toggle" class="block lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
+    <button id="menu-toggle" class=" lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
     </button>
 
     <div id="mobile-menu" class="hidden flex-col bg-[#6CBE02] text-white w-full absolute top-[100%] left-0">
