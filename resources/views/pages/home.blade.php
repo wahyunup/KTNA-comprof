@@ -1,8 +1,9 @@
 @extends('main')
 @section('content')
     <x-hero/>
-    <x-about-us/>
     <x-slogan/>
+    <x-about-us/>
+    <x-visi-misi/>
     <x-gallery/>
     <x-banner/>
     <x-slide/>
