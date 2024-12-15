@@ -1,6 +1,6 @@
 @extends('main')
 @section('content')
-<div class="h-[2000px]">
+<div class="h-screen">
     <x-products :datas="$products" :categories="$categories"/>
 </div>
 @endsection
