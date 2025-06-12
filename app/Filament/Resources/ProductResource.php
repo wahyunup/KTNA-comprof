@@ -6,7 +6,7 @@ use App\Filament\Resources\ProductResource\Pages;
 use App\Filament\Resources\ProductResource\RelationManagers;
 use App\Models\Product;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TextArea;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -54,7 +54,7 @@ class ProductResource extends Resource
                 ->numeric()
                 ->required(),
 
-                TextArea::make('description')
+                Textarea::make('description')
                 ->required(),
 
                 FileUpload::make('image_url')
