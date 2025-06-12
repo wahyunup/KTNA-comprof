@@ -54,7 +54,7 @@ class ProductResource extends Resource
                 ->numeric()
                 ->required(),
 
-                Textarea::make('description')
+                TextArea::make('description')
                 ->required(),
 
                 FileUpload::make('image_url')
